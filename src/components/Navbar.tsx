@@ -4,6 +4,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
+// Components folder is meant for components that are going to be reusable in a lot of different components and pages 
+
 export const Navbar = () => {
 	const [user] = useAuthState(auth);
 	const navigate = useNavigate();
